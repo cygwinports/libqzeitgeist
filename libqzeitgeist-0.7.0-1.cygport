@@ -1,0 +1,9 @@
+GIT_TAG=${PV[1]}.${PV[2]}
+inherit kde4 qt4-cmake git
+
+
+PATCH_URI="0.7.0-cmake-install.patch"
+
+PKG_NAMES="libqzeitgeist0 libqzeitgeist-devel"
+libqzeitgeist0_CONTENTS="usr/bin/cygqzeitgeist-0.dll usr/share/doc/"
+libqzeitgeist_devel_CONTENTS="usr/include/ usr/lib/ usr/share/qzeitgeist/"

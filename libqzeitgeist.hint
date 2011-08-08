@@ -1,0 +1,3 @@
+category: KDE
+sdesc: "Qt4 Zeitgeist library (sources)"
+ldesc: "A Qt interface to the Zeitgeist event tracking system"

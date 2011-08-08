@@ -1,0 +1,12 @@
+--- origsrc/libqzeitgeist/src/CMakeLists.txt	2011-08-08 10:38:21.000000000 -0500
++++ src/libqzeitgeist/src/CMakeLists.txt	2011-08-08 10:42:17.376962500 -0500
+@@ -47,5 +47,8 @@ qt4_wrap_cpp(library_MOC_SRCS ${library_
+ add_library(qzeitgeist SHARED ${library_SRCS} ${library_MOC_SRCS})
+ target_link_libraries(qzeitgeist ${QT_LIBRARIES} ${QDBUS_LDFLAGS})
+ set_target_properties(qzeitgeist PROPERTIES VERSION "${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}" SOVERSION ${CPACK_PACKAGE_VERSION_MAJOR})
+-install(TARGETS qzeitgeist EXPORT QZeitgeistExport DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
++install(TARGETS qzeitgeist EXPORT QZeitgeistExport
++	LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
++	RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
++	ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
+ install(EXPORT QZeitgeistExport DESTINATION ${CMAKE_INSTALL_PREFIX}/share/qzeitgeist/cmake NAMESPACE QZEITGEIST_)

@@ -1,0 +1,5 @@
+category: KDE
+requires: libqzeitgeist0 libQtCore4-devel libQtDBus4-devel
+external-source: libqzeitgeist
+sdesc: "Qt4 Zeitgeist library (development)"
+ldesc: "A Qt interface to the Zeitgeist event tracking system"
