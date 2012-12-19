@@ -1,0 +1,14 @@
+--- origsrc/libqzeitgeist/src/CMakeLists.txt	2012-12-18 18:49:08.000000000 -0600
++++ src/libqzeitgeist/src/CMakeLists.txt	2012-12-18 18:51:50.297574800 -0600
+@@ -76,7 +76,10 @@ set_target_properties(qzeitgeist PROPERT
+                       SOVERSION ${QZEITGEIST_LIB_SOVERSION}
+                       )
+ 
+-install(TARGETS qzeitgeist EXPORT QZeitgeistExport DESTINATION ${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX})
++install(TARGETS qzeitgeist EXPORT QZeitgeistExport
++        LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}
++        RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
++        ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX})
+ 
+ install(FILES ${qzeitgeist_HEADERS} DESTINATION include/QZeitgeist)
+ install(FILES ${qzeitgeist_MODEL_HEADERS} DESTINATION include/QZeitgeist/DataModel)

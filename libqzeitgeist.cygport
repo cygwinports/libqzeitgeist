@@ -1,0 +1,22 @@
+GIT_TAG=v${VERSION}
+inherit kde4 qt4-cmake git
+
+NAME="libqzeitgeist"
+VERSION=0.8.0
+RELEASE=1
+CATEGORY="KDE"
+SUMMARY="Qt Zeitgeist client library"
+DESCRIPTION="Zeitgeist is a service which logs the users' activities and
+events, anywhere from files opened to websites visited and conversations had.
+It makes this information readily available for other applications to use. It
+is able to establish relationships between items based on similarity and usage
+patterns."
+HOMEPAGE="http://zeitgeist-project.com/"
+
+PATCH_URI="0.8.0-cmake-install.patch"
+
+PKG_NAMES="libqzeitgeist1 libqzeitgeist-common libqzeitgeist-devel qt4-qml-zeitgeist"
+libqzeitgeist1_CONTENTS="usr/bin/cygqzeitgeist-1.dll"
+libqzeitgeist_common_CONTENTS="usr/share/doc/"
+libqzeitgeist_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/lib* usr/lib/pkgconfig/"
+qt4_qml_zeitgeist_CONTENTS="usr/lib/qt4/imports/"

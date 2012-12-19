@@ -1,5 +1,0 @@
-category: KDE
-requires: libgcc1 libQtCore4 libQtDBus4 libstdc++6
-external-source: libqzeitgeist
-sdesc: "Qt4 Zeitgeist library (runtime)"
-ldesc: "A Qt interface to the Zeitgeist event tracking system"
