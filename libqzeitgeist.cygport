@@ -3,8 +3,8 @@ inherit kde4 qt4-cmake git
 
 NAME="libqzeitgeist"
 VERSION=0.8.0
-RELEASE=1
-CATEGORY="KDE"
+RELEASE=2
+CATEGORY="Libs"
 SUMMARY="Qt Zeitgeist client library"
 DESCRIPTION="Zeitgeist is a service which logs the users' activities and
 events, anywhere from files opened to websites visited and conversations had.
